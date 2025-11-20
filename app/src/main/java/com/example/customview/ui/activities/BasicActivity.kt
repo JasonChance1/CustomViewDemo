@@ -1,6 +1,5 @@
-package com.example.customview.ui
+package com.example.customview.ui.activities
 
-import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.customview.adapter.ViewAdapter
 import com.example.customview.databinding.ActivityBasicBinding

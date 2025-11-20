@@ -22,13 +22,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.BasicActivity" />
+        <activity android:name=".ui.activities.BasicActivity" />
         <activity android:name=".ui.activities.PieActivity" />
         <activity android:name=".ui.activities.OtherActivity" />
         <activity android:name=".ui.activities.ClockActivity" />
         <activity android:name=".ui.activities.ReverseClockActivity" />
         <activity android:name=".ui.activities.LuckyActivity" />
         <activity android:name=".ui.activities.BitmapActivity" />
+        <activity android:name=".ui.activities.LeafLoadingActivity" />
+        <activity android:name=".ui.activities.BezierActivity" />
+        <activity android:name=".ui.activities.CubicBezierActivity" />
+        <activity android:name=".ui.activities.BezierAnimActivity" />
     </application>
 
 </manifest>
