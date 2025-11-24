@@ -73,8 +73,6 @@ class CubicBezierView @JvmOverloads constructor(
         p10.set(100.fdp, (-75).fdp)
         p11.set(75.fdp, (-100).fdp)
 
-
-        // 1. 画辅助折线 P0-P1-P2-P3
         path.reset()
         path.moveTo(p0.x, p0.y)
         path.lineTo(p1.x, p1.y)
@@ -94,7 +92,6 @@ class CubicBezierView @JvmOverloads constructor(
         path.lineTo(p0.x, p0.y)
         canvas.drawPath(path,helpLinePaint)
 
-        // 2. 画四个控制点
         canvas.drawCircle(p0.x, p0.y, pointRadius, pointPaint)
         canvas.drawCircle(p1.x, p1.y, pointRadius, pointPaint)
         canvas.drawCircle(p2.x, p2.y, pointRadius, pointPaint)
