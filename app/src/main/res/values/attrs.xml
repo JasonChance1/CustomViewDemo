@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DragResizeContainer">
+        <!-- 最大高度占屏幕高度比例，默认 0.8 -->
+        <attr name="drc_maxHeightRatio" format="float" />
+        <!-- 最小高度，默认 20dp -->
+        <attr name="drc_minHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>
