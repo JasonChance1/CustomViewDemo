@@ -33,6 +33,7 @@
         <activity android:name=".ui.activities.BezierActivity" />
         <activity android:name=".ui.activities.CubicBezierActivity" />
         <activity android:name=".ui.activities.BezierAnimActivity" />
+        <activity android:name=".ui.activities.SearchViewActivity" />
     </application>
 
 </manifest>
