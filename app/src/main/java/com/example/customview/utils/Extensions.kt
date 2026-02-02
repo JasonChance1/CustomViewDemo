@@ -1,7 +1,9 @@
 package com.example.customview.utils
 
+import android.content.Context
 import android.content.res.Resources
 import android.graphics.Color
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 import androidx.annotation.ColorInt
@@ -30,3 +32,9 @@ val Number.dp: Int
 
 val Number.fdp: Float
     get() = this.toFloat() * Resources.getSystem().displayMetrics.density
+
+fun String?.toast(context: Context){
+    this.takeIf { !it.isNullOrEmpty() }?.let {
+        Toast.makeText(context,this,Toast.LENGTH_SHORT).show()
+    }
+}

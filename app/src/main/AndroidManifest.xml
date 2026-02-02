@@ -34,6 +34,7 @@
         <activity android:name=".ui.activities.CubicBezierActivity" />
         <activity android:name=".ui.activities.BezierAnimActivity" />
         <activity android:name=".ui.activities.SearchViewActivity" />
+        <activity android:name=".ui.activities.GomokuActivity" />
     </application>
 
 </manifest>

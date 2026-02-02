@@ -15,18 +15,20 @@ import com.example.customview.ui.activities.PieActivity
 import com.example.customview.ui.activities.ReverseClockActivity
 import com.example.customview.ui.activities.ClockActivity
 import com.example.customview.ui.activities.CubicBezierActivity
+import com.example.customview.ui.activities.GomokuActivity
 import com.example.customview.ui.activities.LeafLoadingActivity
 import com.example.customview.ui.activities.SearchViewActivity
 import com.example.customview.utils.addItemSpacing
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
     private val options = listOf(
-        "基础", "饼图", "时钟", "反方向的钟", "所有帧放在一张图实现动画", "加载动画","贝塞尔曲线","三阶贝塞尔曲线","贝塞尔动画","SearchView"
+        "基础", "饼图", "时钟", "反方向的钟", "所有帧放在一张图实现动画", "加载动画","贝塞尔曲线","三阶贝塞尔曲线","贝塞尔动画","SearchView","五子棋"
     )
 
     override fun getVB() = ActivityMainBinding.inflate(layoutInflater)
 
     override fun initViews() {
+        Thread.sleep(6000)
         binding.rvOptions.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = OptionAdapter(options).apply {
@@ -50,6 +52,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             "三阶贝塞尔曲线" -> CubicBezierActivity::class.java
             "贝塞尔动画" -> BezierAnimActivity::class.java
             "SearchView" -> SearchViewActivity::class.java
+            "五子棋" -> GomokuActivity::class.java
             else -> OtherActivity::class.java
         }
         val intent = Intent(this, target)
