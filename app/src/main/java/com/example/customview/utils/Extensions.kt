@@ -33,8 +33,14 @@ val Number.dp: Int
 val Number.fdp: Float
     get() = this.toFloat() * Resources.getSystem().displayMetrics.density
 
-fun String?.toast(context: Context){
+fun String?.toast(context: Context) {
     this.takeIf { !it.isNullOrEmpty() }?.let {
-        Toast.makeText(context,this,Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, this, Toast.LENGTH_SHORT).show()
     }
+}
+
+fun <E> MutableList<E>.safeGet(position: Int): E? {
+    return if (position in this.indices) {
+        this.get(position)
+    } else null
 }
